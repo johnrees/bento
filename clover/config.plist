@@ -10,6 +10,17 @@
 			<false/>
 			<key>DropOEM_DSM</key>
 			<false/>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Comment</key>
+					<string>Rename HDAS to HDEF</string>
+					<key>Find</key>
+					<data>SERBUw==</data>
+					<key>Replace</key>
+					<data>SERFRg==</data>
+				</dict>
+			</array>
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
@@ -43,26 +54,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>3</string>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>ATI</key>
-			<string>0x0</string>
-			<key>IMEI</key>
-			<string>0x0</string>
-			<key>IntelGFX</key>
-			<string>0x0</string>
-			<key>LAN</key>
-			<string>0x0</string>
-			<key>NVidia</key>
-			<string>0x0</string>
-			<key>SATA</key>
-			<string>0x0</string>
-			<key>WIFI</key>
-			<string>0x0</string>
-			<key>XHCI</key>
-			<string>0x0</string>
+			<string>1</string>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -148,16 +140,32 @@
 				<key>Comment</key>
 				<string>Skylake APIC fix, discovered by Pike R. Alpha</string>
 				<key>Find</key>
-				<data>
-				wegQD7bw
-				</data>
+				<data>wegQD7bw</data>
 				<key>Name</key>
 				<string>AppleAPIC</string>
 				<key>Replace</key>
-				<data>
-				vhcAAACQ
-				</data>
+				<data>vhcAAACQ</data>
 			</dict>
+			<dict>
+	            <key>Comment</key>
+	            <string>Realtek ALC 892 Patch</string>
+	            <key>Find</key>
+	            <data>ixnUEQ==</data>
+	            <key>Name</key>
+	            <string>AppleHDA</string>
+	            <key>Replace</key>
+	            <data>kgjsEA==</data>
+	        </dict>
+	        <dict>
+	            <key>Comment</key>
+	            <string>Realtek ALC Codec Patch</string>
+	            <key>Find</key>
+	            <data>gxnUEQ==</data>
+	            <key>Name</key>
+	            <string>AppleHDA</string>
+	            <key>Replace</key>
+	            <data>AAAAAA==</data>
+	        </dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
